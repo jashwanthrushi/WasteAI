@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waste Classifier | WasteAI</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">WasteAI</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="predict.html" class="active">Classifier</a>
+        <a href="design.html">System Design</a>
+        <a href="application.html">Applications</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container">
+    <h1 class="center-text">Waste Type Classifier</h1>
+    <p class="center-text">Upload a photo of waste to predict its type using our AI model.</p>
+
+    <div class="card">
+      <input type="file" id="imageInput" accept="image/*" class="file-input"/>
+      <img id="preview" src="#" alt="Image Preview" style="display:none;" />
+      <button onclick="predictWaste()">🔍 Predict Waste Type</button>
+      <div id="result"></div>
+      <div id="error"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 WasteAI | Powered by Azure Custom Vision</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
+
